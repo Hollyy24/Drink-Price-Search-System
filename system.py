@@ -52,8 +52,8 @@ class TitleBottom:
         self.switch_bottom_picture()
     def set_title_img(self):
         self.images = [
-            Image.open("drink_shiso_juice.png").resize((50, 50)),
-            Image.open("drink_ume_juice.png").resize((50, 50))]
+            Image.open("背景圖片/drink_shiso_juice.png").resize((50, 50)),
+            Image.open("背景圖片/drink_ume_juice.png").resize((50, 50))]
 
         self.current_index_left = 0
         self.current_index_right = 1
@@ -80,10 +80,10 @@ class TitleBottom:
 
     def set_bottom_img(self):
         self.bottom_images=[
-            Image.open("drink_tapioca_pink.png").resize((30,55)),
-            Image.open("drink_tapioca_green.png").resize((30,55)),
-            Image.open("drink_tapioca_white.png").resize((30,55)),
-            Image.open("drink_tapioca_brown.png").resize((30,55))]
+            Image.open("背景圖片/drink_tapioca_pink.png").resize((30, 55)),
+            Image.open("背景圖片/drink_tapioca_green.png").resize((30, 55)),
+            Image.open("背景圖片/drink_tapioca_white.png").resize((30, 55)),
+            Image.open("背景圖片/drink_tapioca_brown.png").resize((30, 55))]
         self.bottom_picture=[]
         self.bottom_items = []
         for i in range(10):
@@ -145,7 +145,7 @@ class System:
                     foreground="Gray")
         self.explain.grid(column=1, row=1)
 
-        self.explain_image =Image.open("mark_manpu11_kirakira.png").resize((50,50))
+        self.explain_image =Image.open("背景圖片/mark_manpu11_kirakira.png").resize((50, 50))
         self.explain_picture = ImageTk.PhotoImage(self.explain_image)
         self.picture_left = tk.Label(self.search_section,
                                      image=self.explain_picture,background=BACKGROUND_COLOR)
@@ -156,13 +156,13 @@ class System:
 
 
 
-        self.tree_top_image = Image.open("line_dots3_yellow.png").resize((700, 5))
+        self.tree_top_image = Image.open("背景圖片/line_dots3_yellow.png").resize((700, 5))
         self.tree_top_picture = ImageTk.PhotoImage(self.tree_top_image)
         self.tree_top = tk.Label(self.search_section,
                                        image=self.tree_top_picture,background=BACKGROUND_COLOR)
         self.tree_top.grid(column=0,columnspan=3,row=2)
 
-        self.tree_bottom_image = Image.open("line_dots3_yellow.png").resize((700, 5))
+        self.tree_bottom_image = Image.open("背景圖片/line_dots3_yellow.png").resize((700, 5))
         self.tree_bottom_picture = ImageTk.PhotoImage(self.tree_bottom_image)
         self.tree_bottom_ = tk.Label(self.search_section,
                                  image=self.tree_bottom_picture, background=BACKGROUND_COLOR)

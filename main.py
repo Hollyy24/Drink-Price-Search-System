@@ -1,5 +1,5 @@
 from tkinter import Tk
-from app import System, Data, TitleBottom
+from system import System, Data, TitleBottom
 
 
 
