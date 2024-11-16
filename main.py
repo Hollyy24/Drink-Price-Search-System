@@ -4,7 +4,6 @@ from system import System, Data, TitleBottom
 
 
 
-
 root = Tk()
 root.title("飲料價格查詢系統")
 root.minsize(width=700,height=900)
